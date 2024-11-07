@@ -14,6 +14,6 @@ WORKDIR /application
 COPY --from=base /app/build/libs/SpringBootRabbitMqBasics-1.0.jar output/app.jar
 COPY --from=base /app/src/main/resources/application.properties config/
 
-EXPOSE 9099
+EXPOSE 8080
 
 ENTRYPOINT ["java", "-jar", "/application/output/app.jar"]
